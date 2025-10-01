@@ -1,18 +1,16 @@
 <?php get_header(); ?>
 
-<section class="hero">
-    <h1>Welcome to My Website</h1>
-    <p>Your hero section content here</p>
-</section>
-
-<section class="services">
-    <h2>Our Services</h2>
-    <p>Add your services content here</p>
-</section>
-
-<section class="contact">
-    <h2>Contact Us</h2>
-    <?php echo do_shortcode(); ?>
-</section>
+<div id="navbar">
+    <div class= "logo">
+      <a href ="#"><img src= "C:\Users\use\Desktop\My-Theme\assets\images\Globe Now.png"></a>
+    </div>
+    <div class ="menu">
+      <li><a href= "#">Home</a></li>
+      <li><a href= "#">Latest</a></li>
+      <li><a href= "#">Categories</a></li>
+      <li><a href= "#">Contact</a></li>
+      <li><a href= "#">About Us</a></li>
+    </div>
+  </div>
 
 <?php get_footer(); ?>
