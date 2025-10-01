@@ -1,6 +1,6 @@
 .navbar{
-    border: blue;
-    border-radius: 4px;
+    border-color: black, 5px;
+    border-radius: 10px;
     align-self: center;
     background-color: rgb(226, 0, 0);
     z-index: 10;
