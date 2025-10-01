@@ -6,3 +6,20 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+<header id="site-header">
+  <div class="logo">
+    <a href="<?php echo home_url(); ?>">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Globe Now.png" alt="Site Logo">
+    </a>
+  </div>
+
+  <nav class="main-navigation">
+    <?php
+    wp_nav_menu([
+      'theme_location' => 'main-menu',
+      'container'      => false,
+      'menu_class'     => 'nav-menu',
+    ]);
+    ?>
+  </nav>
+</header>

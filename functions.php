@@ -11,3 +11,12 @@ function mytheme_scripts() {
 }
 add_action('wp_enqueue_scripts', 'mytheme_scripts');
 
+function mytheme_register_menus() {
+  register_nav_menus([
+    'main-menu' => __( 'Main Menu', 'mytheme' )
+  ]);
+}
+add_action('init', 'mytheme_register_menus');
+
+
+
