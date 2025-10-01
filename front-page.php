@@ -2,13 +2,13 @@
 
 <main>
   <!-- Navbar can remain in header.php, keep homepage sections here -->
-  <section class="hero">
-    <div class="container">
+  
+    
       <h1>Welcome to Globe Now</h1>
       <p>Your hero text here.</p>
       <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Globe Now.png" alt="Logo">
-    </div>
-  </section>
+    
+  
 
   <section class="services">
     <div class="container">
