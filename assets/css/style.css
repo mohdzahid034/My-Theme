@@ -1,7 +1,7 @@
 .navbar{
-    border-color: black;
+    border: blue;
     border-radius: 4px;
     align-self: center;
-    background-color: white;
+    background-color: rgb(226, 0, 0);
     z-index: 10;
 }
