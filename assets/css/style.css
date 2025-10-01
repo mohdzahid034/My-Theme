@@ -5,3 +5,4 @@
     background-color: white;
     z-index: 10;
 }
+body { background: red !important; }
