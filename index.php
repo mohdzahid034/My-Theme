@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main>
+    <h1>Zahid</h1>
   <?php
   if (have_posts()) {
     while (have_posts()) {
