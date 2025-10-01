@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main class="front-page">
+  <h1>Zahid</h1>
   <section class="hero">
     <h1>Welcome to <?php bloginfo('name'); ?></h1>
     <p><?php bloginfo('description'); ?></p>
