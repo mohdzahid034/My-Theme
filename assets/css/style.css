@@ -6,4 +6,6 @@ body{
     border-color: black;
     border-radius: 4px;
     align-self: center;
+    background-color: white;
+    z-index: 10;
 }

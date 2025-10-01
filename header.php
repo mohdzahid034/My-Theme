@@ -6,8 +6,8 @@
   <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-<header id="site-header">
-  <div>
+<header>
+  <div class="navbar">
     <div class="logo">
       <a href="<?php echo get_template_directory_uri(); ?>front-page.php">
         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Globe Now.png" alt="Site Logo">

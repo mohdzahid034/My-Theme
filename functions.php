@@ -1,7 +1,7 @@
 <?php
 function mytheme_scripts() {
     // WordPress default stylesheet
-    wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('style', get_stylesheet_uri(), array(), time());
 
     // Your custom CSS
     wp_enqueue_style('custom-css', get_template_directory_uri() . '/assets/css/style.css');
