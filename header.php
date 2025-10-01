@@ -7,19 +7,19 @@
 </head>
 <body <?php body_class(); ?>>
 <header id="site-header">
-  <div class="logo">
-    <a href="<?php echo home_url(); ?>">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Globe Now.png" alt="Site Logo">
-    </a>
-  </div>
+  <div>
+    <div class="logo">
+      <a href="<?php echo get_template_directory_uri(); ?>front-page.php">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Globe Now.png" alt="Site Logo">
+      </a>
+    </div>
 
-  <nav class="main-navigation">
-    <?php
-    wp_nav_menu([
-      'theme_location' => 'main-menu',
-      'container'      => false,
-      'menu_class'     => 'nav-menu',
-    ]);
-    ?>
-  </nav>
+    <nav class="navigation">
+      <li><a href = "#">Home</a></li>
+      <li><a href = "#">Categories</a></li>
+      <li><a href = "#">Latest</a></li>
+      <li><a href = "#">Sport</a></li>
+      <li><a href = "#">Contact Us</a></li>
+    </nav>
+  </div>
 </header>

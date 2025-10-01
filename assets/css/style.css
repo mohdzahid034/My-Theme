@@ -1,3 +1,9 @@
 body{
     background-color: aquamarine;
 }
+
+.navbar{
+    border-color: black;
+    border-radius: 4px;
+    
+}
