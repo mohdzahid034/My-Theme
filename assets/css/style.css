@@ -2,7 +2,7 @@ body{
     background-color: aquamarine;
 }
 
-.navbar{
+#site-header .navbar{
     border-color: black;
     border-radius: 4px;
     align-self: center;
