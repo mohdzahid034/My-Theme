@@ -15,11 +15,13 @@
     </div>
 
     <nav class="navigation">
-      <li><a href = "#">Home</a></li>
-      <li><a href = "#">Categories</a></li>
-      <li><a href = "#">Latest</a></li>
-      <li><a href = "#">Sport</a></li>
-      <li><a href = "#">Contact Us</a></li>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Categories</a></li>
+        <li><a href="#">Latest</a></li>
+        <li><a href="#">Sport</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
     </nav>
   </div>
 </header>
