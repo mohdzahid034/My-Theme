@@ -5,6 +5,11 @@
     background-color: rgb(226, 0, 0);
     display: flex;
     position: fixed;
+    width: 100%;
+    top: 5px;
+    left: 5px;
+    height: 1.5cm;
+
 }
 
 .logo {
@@ -16,7 +21,7 @@
 
 }
 
-.navigation-links {
+.navigation-li {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -29,4 +34,13 @@
     position: relative;
     top: 10px;
     left: 20px;
+}
+
+.navigation-li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
