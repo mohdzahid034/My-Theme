@@ -16,7 +16,7 @@
 
     <nav class="navigation">
       <ul>
-        <li><a href="<?php echo get_template_directory_uri(); ?>home.php">Home</a></li>
+        <li><a href="C:\Users\use\Desktop\My-Theme\home.php">Home</a></li>
         <li><a href="#">Categories</a></li>
         <li><a href="#">Latest</a></li>
         <li><a href="#">Sport</a></li>
