@@ -16,12 +16,13 @@
 
     <nav class="navigation">
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="<?php echo get_template_directory_uri(); ?>home.php">Home</a></li>
         <li><a href="#">Categories</a></li>
         <li><a href="#">Latest</a></li>
         <li><a href="#">Sport</a></li>
         <li><a href="#">Contact Us</a></li>
       </ul>
+      <div class="menu-icon" id="menu-icon">☰</div>
     </nav>
   </div>
 </header>
