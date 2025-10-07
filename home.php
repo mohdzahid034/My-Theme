@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+<h1>home page</h1>
 <?php
     $latest = new WP_Query(['posts_per_page' => 3]);
     if ($latest->have_posts()) {
@@ -13,3 +15,4 @@
     }
     wp_reset_postdata();
     ?>
+    <?php get_footer(); ?>
