@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main>
+    <h1>category</h1>
 <h1>Category: <?php single_cat_title(); ?></h1>
 <?php
 if (have_posts()) {

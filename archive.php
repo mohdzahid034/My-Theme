@@ -16,7 +16,7 @@ if (is_category()) {
 }
 ?>
 </h1>
-
+<h1>Archives</h1>
 <?php
 if (have_posts()) {
     while (have_posts()) {

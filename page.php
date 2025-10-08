@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main class="page">
+  <h1>page</h1>
   <?php
   if (have_posts()) {
     while (have_posts()) {
