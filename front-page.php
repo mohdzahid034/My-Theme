@@ -10,7 +10,7 @@
   <section class="latest-posts">
     <h2>Latest News</h2>
     <?php
-    $latest = new WP_Query(['posts_per_page' => 3]);
+    $latest = new WP_Query(['posts_per_page' => 10]);
     if ($latest->have_posts()) {
       while ($latest->have_posts()) {
         $latest->the_post();
