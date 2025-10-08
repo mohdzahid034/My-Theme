@@ -4,25 +4,41 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php wp_head(); ?>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body <?php body_class(); ?>>
 <header>
-  <div class="navbar">
-    <div class="logo">
-      <a href="<?php echo get_template_directory_uri(); ?>front-page.php">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Globe Now.png" alt="Site Logo">
-      </a>
+  <nav class="navbar">
+    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo2.png" alt="Site Logo">
+    <div class="menu" id="menu">
+      <div class="menu-links">
+        <a href="#">Home</a>
+        <a href="#">India</a>
+        <a href="#">World</a>
+        <a href="#">Sports</a>
+        
+        <a href="#">Space</a>
+        <a href="#">Business</a>
+        <a href="#">Technology</a>
+      </div>
+      <div class="separator">
+        <a class="contact" href="#"><i class="fa fa-phone"></i>Contact</a><br>
+        <a class="about" href="#"><i class="fa fa-info-circle"></i>About</a>
+      </div>
     </div>
+    <div class="menu-icon" id="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
 
-    <nav class="navigation">
-      <ul>
-        <li><a href="C:\Users\use\Desktop\My-Theme\home.php">Home</a></li>
-        <li><a href="#">Categories</a></li>
-        <li><a href="#">Latest</a></li>
-        <li><a href="#">Sport</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <div class="menu-icon" id="menu-icon">☰</div>
-    </nav>
-  </div>
+  <div class="bmenubar"><a href="#">India</a>
+        <a href="#">World</a>
+        <a href="#">Sports</a>
+        <a href="#">Space</a>
+        <a href="#">Business</a>
+        <a href="#">Technology</a></div>
 </header>
