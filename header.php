@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
 <header>
   <nav class="navbar">
-    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo2.png" alt="Site Logo">
+    <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo2.png" alt="Site Logo"></div>
     <div class="menu" id="menu">
       <div class="menu-links">
         <a href="#">Home</a>
