@@ -1,12 +1,10 @@
 <?php
-if (have_comments()) :
-    ?>
-    <h2>Comments</h2>
-    <ol>
-        <?php wp_list_comments(); ?>
-    </ol>
-<?php
-endif;
+if ( post_password_required() ) { return; }
+if ( have_comments() ) : ?>
+  <h3><?php comments_number(); ?></h3>
+  <ol class="comment-list">
+    <?php wp_list_comments(); ?>
+  </ol>
+<?php endif; ?>
 
-comment_form();
-?>
+<?php comment_form(); ?>

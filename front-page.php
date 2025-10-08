@@ -1,31 +1,37 @@
 <?php get_header(); ?>
 
 <main class="front-page">
-  <h1>Zahid</h1>
-  <section class="hero">
-    <h1>Welcome to <?php bloginfo('name'); ?></h1>
-    <p><?php bloginfo('description'); ?></p>
-  </section>
+  <?php
+  // show the static page content if this front page is a page
+  if ( have_posts() ) :
+    while ( have_posts() ) : the_post();
+      the_content();
+    endwhile;
+  endif;
+  ?>
 
-  <section class="latest-posts">
-    <h2>Latest News</h2>
+  <section class="recent-posts">
+    <h2>Latest Posts</h2>
     <?php
-    $latest = new WP_Query(['posts_per_page' => 10]);
-    if ($latest->have_posts()) {
-      while ($latest->have_posts()) {
-        $latest->the_post();
-        ?>
-        <article>
-          <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-          <p><?php the_excerpt(); ?></p>
+    $recent = new WP_Query(array('posts_per_page' => 6));
+    if ($recent->have_posts()) :
+      echo '<div class="posts-grid">';
+      while ($recent->have_posts()) : $recent->the_post(); ?>
+        <article class="card">
+          <a href="<?php the_permalink(); ?>">
+            <?php if ( has_post_thumbnail() ) the_post_thumbnail('medium'); ?>
+            <h3><?php the_title(); ?></h3>
+            <p><?php echo wp_trim_words(get_the_excerpt(), 20, '...'); ?></p>
+          </a>
         </article>
-        <?php
-      }
-    }
-    wp_reset_postdata();
+      <?php endwhile;
+      echo '</div>';
+      wp_reset_postdata();
+    endif;
     ?>
   </section>
+
 </main>
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
-
