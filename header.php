@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
   <link href="<?php echo get_template_directory_uri(); ?>/functions.js">
 </head>
-<body <?php body_class(); ?>>
+
   <?php wp_body_open(); ?>
 <header>
   <nav class="navbar">
