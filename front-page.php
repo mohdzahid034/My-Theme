@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <main class="front-page">
+  <h1>Zahid</h1>
   <?php
   // show the static page content if this front page is a page
   if ( have_posts() ) :

@@ -44,6 +44,5 @@
         <a href="#">Space</a>
         <a href="#">Business</a>
         <a href="#">Technology</a></div>
-<?php global $template; echo '<!-- Template: ' . basename($template) . ' -->'; ?>
 
 </header>
