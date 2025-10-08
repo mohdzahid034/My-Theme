@@ -8,10 +8,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="<?php echo get_template_directory_uri(); ?>/functions.js">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Globe Now.png" alt="Site Logo">
 </head>
 <body <?php body_class(); ?>>
 <header>
   <nav class="navbar">
+
     <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo2.png" alt="Site Logo"></div>
     <div class="menu" id="menu">
       <div class="menu-links">
