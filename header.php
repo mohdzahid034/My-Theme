@@ -18,12 +18,11 @@
     <div class="logo"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/main_logo2.png" alt="Site Logo"></div>
     <div class="menu" id="menu">
       <div class="menu-links">
-        <a href="#">Home</a>
-        <a href="#">India</a>
-        <a href="#">World</a>
-        <a href="#">Sports</a>
-        
-        <a href="#">Space</a>
+        <a href="<?php echo home_url('/home'); ?>">Home</a>
+        <a href="<?php echo get_template_directory_uri(); ?>/front-page.php">India</a>
+        <a href="<?php echo home_url('/world'); ?>">World</a>
+        <a href="<?php echo home_url('/sports'); ?>">Sports</a>
+        <a href="<?php echo home_url('/space'); ?>">Space</a>
         <a href="#">Business</a>
         <a href="#">Technology</a>
       </div>
