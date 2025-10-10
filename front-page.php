@@ -1,15 +1,11 @@
 <?php get_header(); ?>
 
 <main class="front-page">
-  <h1>Zahid</h1>
-  <?php
-  // show the static page content if this front page is a page
-  if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-      the_content();
-    endwhile;
-  endif;
-  ?>
+  <div class="hero-banner"> 
+    <h1>Welcome to Our Blog</h1>
+    <p>Your source for the latest news and articles</p>
+    <a href="<?php echo site_url('/blog'); ?>" class="btn">Explore Articles</a>
+  </div>
 
   <section class="recent-posts">
     <h2>Latest Posts</h2>

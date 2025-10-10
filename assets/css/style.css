@@ -120,6 +120,16 @@ body {
 .bmenubar::-webkit-scrollbar-thumbs{
   display: none;
 }
+
+.hero-banner {
+  display: block;
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e1fcfc;
+  border: #149999 1px solid;
+  margin: 20px;
+  border-radius: 10px;
+}
 @media (max-width: 768px) {
   * {
     -webkit-tap-highlight-color: transparent; /* removes blue highlight */
@@ -248,7 +258,10 @@ body {
   scrollbar-width: none;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
-  
+  :hover {
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
 }
   .bmenubar::-webkit-scrollbar {
     height: 6px;
