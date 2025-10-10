@@ -7,7 +7,7 @@
     <a href="<?php echo site_url('/blog'); ?>" class="btn">Today Blogs</a>
   </div>
 
-  <section class="recent-posts">
+  <section>
     <h2>Latest Posts</h2>
     <div class="posts-grid">
       <div class= "posts">
