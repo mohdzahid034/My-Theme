@@ -2,13 +2,15 @@
 
 <main class="front-page">
   <div class="hero-banner"> 
-    <h1>Welcome to Our Blog</h1>
-    <p>Your source for the latest news and articles</p>
-    <a href="<?php echo site_url('/blog'); ?>" class="btn">Explore Articles</a>
+    <h1>Welcome to Globeinfo.in</h1>
+    <p>Your ultimate source for the latest news and articles</p>
+    <a href="<?php echo site_url('/blog'); ?>" class="btn">Today Blogs</a>
   </div>
 
   <section class="recent-posts">
     <h2>Latest Posts</h2>
+    <div class="posts-grid">
+      <div class="post">
     <?php
     $recent = new WP_Query(array('posts_per_page' => 6));
     if ($recent->have_posts()) :
@@ -26,6 +28,8 @@
       wp_reset_postdata();
     endif;
     ?>
+    </div>
+    </div>
   </section>
 
 </main>
