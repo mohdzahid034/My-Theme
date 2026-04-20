@@ -22,6 +22,7 @@
         <a href="#">Business</a>
         <a href="#">Technology</a>
         <a href="#">Zahid</a>
+        <a href="#">Zahid</a>
       </div>
       <div class="separator">
         <a class="contact" href="#"><i class="fa fa-phone"></i>Contact</a><br>
